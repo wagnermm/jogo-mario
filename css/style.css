@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    border-bottom: 3px solid #00d150;
+    background-image: url(../image/backgorund.png);
+    background-size: cover;
+	background-repeat: no-repeat;
+	padding: 100px 0px;
+	background-position: center center;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    right: 120px;
+    animation: pipe-animation 2.5s infinite linear;
+}
+
+.mario {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+
+}
+
+.jump {
+    animation: jump 600ms;
+}
+
+.enemy {
+    position: absolute;
+    width: 90px;
+    right: 120px;
+    animation: enemy-animation 7s infinite linear;
+}
+
+@keyframes pipe-animation {
+    from {
+        right: 0;
+    }
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+    40% {
+        bottom: 200px;
+    }
+    50% {
+        bottom: 200px;
+    }
+    60% {
+        bottom: 200px;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+@keyframes enemy-animation {
+    from {
+        right: 0;
+    }
+    to {
+        right: 100%;
+    }
+}
