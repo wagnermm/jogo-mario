@@ -1,4 +1,6 @@
-# Jogo do Mario
+# Mario Jump
 
-## Descrição do projeto
-- Um jogo simples do Mario apenas com html, css e javascript
+## Project Description
+- A simple Mario game with only html, css and javascript
+
+<img src="./image/mario.gif" alt="mario">
