@@ -1,6 +1,6 @@
 # Mario Jump
 
 ## Project Description
-- A simple Mario game with only html, css and javascript
+- A simple Mario game with JavaScript
 
-<img src="./image/mario.gif" alt="mario">
+<img src="./image/marioMove.gif" alt="mario">
