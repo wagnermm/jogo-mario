@@ -17,6 +17,7 @@ const loop = setInterval(function(){
     const pipePosition = pipe.offsetLeft
     const enemyPosition = enemy.offsetLeft
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '')
+    const gameOvoer = document.querySelector('.game-over')
 
     if(pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
 
@@ -32,6 +33,8 @@ const loop = setInterval(function(){
 
         enemy.style.animation = 'none'
         enemy.style.left = `${enemyPosition}px`
+
+        gameOvoer.style.visibility = "visible"
 
         clearInterval(loop)
     }
