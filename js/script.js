@@ -37,5 +37,4 @@ const loop = setInterval(function(){
 
 },10)
 
-document.addEventListener('click', jump)
-refreshGame.addEventListener('click', function(){location.reload()})
+document.addEventListener('keydown', jump)
