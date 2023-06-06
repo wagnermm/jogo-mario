@@ -1,7 +1,8 @@
 
 const mario = document.querySelector('.mario')
 const pipe = document.querySelector('.pipe')
-const enemy = document.querySelector('.enemy')
+const gameOvoer = document.querySelector('.game-over')
+const refreshGame = document.querySelector('.refresh')
 
 const jump = function() {
 
@@ -15,9 +16,7 @@ const jump = function() {
 const loop = setInterval(function(){
 
     const pipePosition = pipe.offsetLeft
-    const enemyPosition = enemy.offsetLeft
     const marioPosition = +window.getComputedStyle(mario).bottom.replace('px', '')
-    const gameOvoer = document.querySelector('.game-over')
 
     if(pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
 
@@ -31,9 +30,6 @@ const loop = setInterval(function(){
         mario.style.width = '80px'
         mario.style.marginLeft = '50px'
 
-        enemy.style.animation = 'none'
-        enemy.style.left = `${enemyPosition}px`
-
         gameOvoer.style.visibility = "visible"
 
         clearInterval(loop)
@@ -41,4 +37,5 @@ const loop = setInterval(function(){
 
 },10)
 
-document.addEventListener('keydown', jump)
+document.addEventListener('click', jump)
+refreshGame.addEventListener('click', function(){location.reload()})
