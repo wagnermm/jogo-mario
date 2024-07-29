@@ -16,12 +16,12 @@
     overflow: hidden;
 }
 
-.pipe {
+.fireball {
     position: absolute;
     bottom: 0;
     width: 120px;
     right: 120px;
-    animation: pipe-animation 3s infinite linear;
+    animation: fireball-animation 3s infinite linear;
 }
 
 .mario {
@@ -104,7 +104,7 @@
     font-size: 1.5rem;
 }
 
-@keyframes pipe-animation {
+@keyframes fireball-animation {
     from {
         right: -120px;
     }
@@ -136,7 +136,7 @@
 
 @media (max-width: 768px) {
     .pipe {
-        animation: pipe-animation 1s infinite linear;
+        animation: fireball-animation 1s infinite linear;
         width: 100px;
     }
     .mario {
