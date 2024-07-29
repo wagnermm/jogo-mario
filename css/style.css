@@ -7,7 +7,7 @@
 .container {
     width: 100%;
     height: 99vh;
-    background-image: url(../image/backgorund.png);
+    background-image: url(../image/background.png);
     background-size: cover;
 	background-repeat: no-repeat;
 	padding: 100px 0px;
@@ -21,7 +21,7 @@
     bottom: 0;
     width: 120px;
     right: 120px;
-    animation: pipe-animation 2.5s infinite linear;
+    animation: pipe-animation 3s infinite linear;
 }
 
 .mario {
@@ -40,30 +40,21 @@
 }
 
 .game-over {
+    width: 400px;
     position: fixed;
-    top: 15vh;
-    right: 50vw;
-    width: 300px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    padding: 0.2rem;
-    background: rgba(0, 0, 0, 0.8);
-    border: 1px solid #c41b1b;;
+    top: 50%;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background: #000;
     border-radius: 5px;
     color: #fff;
-    font-size: 18px;
     text-align: center;
     visibility: hidden;
 }
 
 .game-over p {
     font-size: 1.6rem;
-    font-family: cursive;
-    background: #c41b1b;
     border-radius: 5px;
     padding: 1rem;
 }
@@ -75,6 +66,42 @@
     cursor: pointer;
     border: 1px solid #333;
     border-radius: 5px;
+}
+
+.instructions {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    z-index: 10;
+}
+
+.start-game {
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.score {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 @keyframes pipe-animation {

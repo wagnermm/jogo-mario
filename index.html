@@ -8,10 +8,19 @@
     <title>Mario</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
+        <div class="score">
+            <p>Pontuação: <span id="points">0</span></p>
+        </div>
+        <div class="instructions">
+            <h2>Instruções do Jogo</h2>
+            <p>Clique na tela para pular e evitar o obstáculo.</p>
+            <button type="button" class="start-game">Iniciar Jogo</button>
+        </div>
         <div class="main">
             <div class="game-over">
                 <p>Game Over!</p>
+                <p>Sua pontuação: <span id="points">0</span></p>
                 <button type="button" class="refresh">Reiniciar<i class="fa-sharp fa-solid fa-rotate-right"></i></button>
             </div>
         </div>
